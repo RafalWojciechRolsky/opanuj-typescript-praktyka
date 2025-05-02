@@ -37,7 +37,7 @@ describe('Data Access Layer Tests', () => {
         name: 'Bob',
         email: 'bob@example.com',
       });
-      const user = await userRepository.getById(newUser.id);
+      const user = await userRepository.getById(newUser.id!);
       expect(user).toEqual(newUser);
     });
 
